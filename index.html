@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alfiza Dongare | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">My Portfolio</div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#admin">Admin</a></li>
+    </ul>
+    <button id="themeToggle">Dark Mode</button>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="home" class="container">
+    <img id="heroImage" class="top-img" src="assets/bg1wal.avif" alt="Background" />
+    <div class="title-text">
+      <h1>I'm Alfiza Dongare</h1>
+      <h2>I'm a Programmer</h2>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="container2">
+    <img src="assets/myimg.jpg" alt="Profile" />
+    <h2>Hello.</h2>
+    <p class="about-me">
+      I have completed a diploma in computer science & engineering. I'm a Full Stack Web Developer and passionate about web development.
+    </p>
+  </section>
+
+  <hr />
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="container3">
+    <div class="skill">
+      <h2>My Skills</h2>
+      <h3>Web Development & Design</h3>
+      <p>I started coding at 16 to make websites. I've gained solid experience designing and building web apps.</p>
+      <h3>Programming: C & C++</h3>
+      <p>I love solving DSA problems and building apps with C++ using OOP concepts.</p>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p class="conP">Want to work together? Send me a message!</p>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <!-- ADMIN SECTION -->
+  <section id="admin" class="admin-section">
+    <h2>Admin Panel</h2>
+    <div id="loginBox">
+      <input type="text" id="adminUsername" placeholder="Enter Username" />
+      <input type="password" id="adminPassword" placeholder="Enter Password" />
+      <button id="togglePassword">Show</button>
+      <button id="adminLoginBtn">Login</button>
+    </div>
+
+    <div id="responseViewer" class="hidden">
+      <h3>User Messages</h3>
+      <div id="responseList">
+        <!-- Messages will be injected here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="final-container">
+    <a href="mailto:alfizadongare@gmail.com">Gmail</a>
+    <a href="https://linkedin.com">LinkedIn</a>
+    <a href="#">Website</a>
+    <p class="copyright">
+      &copy; 2025 Alfiza Dongare | All rights reserved
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
